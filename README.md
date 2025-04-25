@@ -17,16 +17,16 @@
 
 ## 模型架构
 
-![img](https://uvoialj5w0z.feishu.cn/space/api/box/stream/download/asynccode/?code=YmVhZTVhODk2NDg0ODAxNWE0NThiN2M2ZmU0YmMxZWVfbExOU2l1Q2J3TmwweUtMRWhrZTFzMUdSY2dydW5BbW1fVG9rZW46SzJZeGJvVXUyb0VDa3V4ZGNKMmNQV2xUblpmXzE3NDU1ODE1MDU6MTc0NTU4NTEwNV9WNA)
+![img](https://github.com/terminal-ai-course/SwiftAnalyze/blob/main/img/structure.png)
 
-**本项目核心逻辑是迭代式、自我优化的研究****范式****：**
+**本项目核心逻辑是迭代式、自我优化的研究范式：**
 
-1. **智能规划 (****Query** **Decomposition):** 接收用户关于特定行业（如金融、科技）的初始查询后，LLM首先将宽泛的问题分解为一系列具体的、可操作的子问题，形成结构化的研究计划。
+1. **智能规划 (Query  Decomposition):** 接收用户关于特定行业（如金融、科技）的初始查询后，LLM首先将宽泛的问题分解为一系列具体的、可操作的子问题，形成结构化的研究计划。
 2. **动态网络搜索 (Intelligent Search):** 针对分解后的子问题，工具自动调用网络搜索API，抓取最新的相关新闻、文章摘要、数据点等信息。
 3. **信息整合与去重 (Integration & Deduplication):** 收集到的信息被系统地整理、存储，并通过URL进行去重，确保信息来源的多样性和有效性。
-4. **LLM****驱动的反思与评估 (Reflection & Evaluation):** 在每一轮信息收集后，LLM会对当前掌握的信息进行“反思”，评估其是否足以回答原始问题、识别冗余或无关信息，并**智能生成新的、更深入的****子查询**以弥补信息缺口或澄清疑点。
+4. **LLM驱动的反思与评估 (Reflection & Evaluation):** 在每一轮信息收集后，LLM会对当前掌握的信息进行“反思”，评估其是否足以回答原始问题、识别冗余或无关信息，并智能生成新的、更深入的子查询以弥补信息缺口或澄清疑点。
 5. **循环迭代 (Iterative Refinement):** “搜索-整合-反思”的循环会进行多轮（可配置），直至信息被认为足够全面或达到预设的迭代次数。
-6. **基础数据扫描 (Basic** **Data Analysis****):** 在合成报告前，工具可对收集到的文本执行初步的数据扫描，提取关键术语频率、数值、百分比等，为报告提供量化视角（可选）。
+6. **基础数据扫描 (Basic** **Data Analysis**): 在合成报告前，工具可对收集到的文本执行初步的数据扫描，提取关键术语频率、数值、百分比等，为报告提供量化视角（可选）。
 7. **报告自动合成 (Report Generation):** 最后，利用专门配置的LLM（如Deepseek），基于所有筛选、整合后的信息和数据扫描结果，自动撰写一篇结构清晰、逻辑连贯、观点客观的行业分析报告。
 8. **严谨引用 (Citation):** 最重要的是，报告在引用信息时会自动标注其来源URL (`[来源: URL]`)，确保内容的可追溯性和专业性。
 
