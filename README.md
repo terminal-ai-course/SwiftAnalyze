@@ -41,7 +41,7 @@ BOCHAAI_API_KEY=your_bochaai_key
 DASHSCOPE_API_KEY=your_dashscope_key
 ```
 
-1. 修改行业：
+2. 修改行业：
 
 ```Python
 # 修改行业配置（支持 finance/tech）
@@ -51,7 +51,7 @@ SELECTED_INDUSTRY = "tech"
 user_query = "2024年人工智能芯片领域的最新发展动态"
 ```
 
-1. 运行脚本：
+3. 运行脚本：
 
 ```Bash
 python industry_analyst.py
