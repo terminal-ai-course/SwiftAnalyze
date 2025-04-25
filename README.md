@@ -17,9 +17,7 @@
 
 ## 模型架构
 
-```html
-<img src="https://github.com/terminal-ai-course/SwiftAnalyze/raw/main/img/structure.png" alt="Model Architecture" width="500px">
-```
+![img](https://github.com/terminal-ai-course/SwiftAnalyze/blob/main/img/structure.png){width=500px}
 
 **本项目核心逻辑是迭代式、自我优化的研究范式：**
 
